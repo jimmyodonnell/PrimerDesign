@@ -1,13 +1,16 @@
 # Primer Design
 
-You will need:
+This is an example of how to design primers for amplifying a target from a mixed sample, also known as metabarcoding, environmental DNA (eDNA), amplicon sequencing, metagenomics, et cetera. 
+There are two different applications for which you might want to use these primers: (1) absolute quantification of single-taxon DNA using qPCR and (2) surveying for relative abundance of each of a set of taxa within a higher-level taxon. 
+This walk-through is geared towards designing primers for qPCR of a single target taxon, but can be slightly modified for sequencing applications.
+
+You will need the following things on your computer:
 
 1. R, including the package taxize 
 2. python, including the module Bio ('BioPython')
 3. [ecoPrimers](https://git.metabarcoding.org/obitools/ecoprimers/wikis/home); Documentation [here](http://metabarcoding.org/obitools/doc/scripts/ecoPrimers.html)
 4. [ecoPCR](https://git.metabarcoding.org/obitools/ecopcr/wikis/home); documentation [here](http://metabarcoding.org/obitools/doc/scripts/ecoPCR.html)
 5. NCBI Taxonomy database dump file [available here](ftp://ftp.ncbi.nih.gov/pub/taxonomy). Or, from the command line:
-
 `wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz`
 
 Your life will be easier if you get `ecoPrimers`, `ecoPCR`, and `ecoPCRFormat.py` into your shell's `$PATH` variable. Accomplishing that is [up to you](https://www.google.com/search?q=how+to+add+to+path+variable).
